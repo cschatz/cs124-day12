@@ -1,5 +1,7 @@
+package net.datastructures;
 /*
- * Copyright 2014, Michael T. Goodrich, Roberto Tamassia, Michael H. Goldwasser
+ 
+* Copyright 2014, Michael T. Goodrich, Roberto Tamassia, Michael H. Goldwasser
  *
  * Developed for use with the book:
  *
@@ -20,7 +22,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package net.datastructures;
+
 
 /**
  * A simplified version of the java.util.List interface.

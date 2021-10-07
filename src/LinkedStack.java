@@ -1,3 +1,4 @@
+
 import net.datastructures.SinglyLinkedList;
 
 public class LinkedStack<E> implements Stack<E> {
