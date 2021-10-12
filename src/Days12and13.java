@@ -63,7 +63,7 @@ public class Days12and13
 		people.enqueue("Enrique");
 		while (!people.isEmpty())
 			System.out.println(people.dequeue());
-		s
+
 	}
 
 }
