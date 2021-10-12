@@ -31,17 +31,17 @@ public class Days12and13
 		
 		Scanner scanner = new Scanner(System.in);
 		
-		while (true) {
-			System.out.println("Type an expression (blank to stop): ");
-			String expression = scanner.nextLine();
-			if (expression.equals(""))
-				break;
-			if (checkParens(expression))
-				System.out.println("Syntax ok.");
-			else
-				System.out.println("Syntax NOT ok!");
-		}
-		
+//		while (true) {
+//			System.out.println("Type an expression (blank to stop): ");
+//			String expression = scanner.nextLine();
+//			if (expression.equals(""))
+//				break;
+//			if (checkParens(expression))
+//				System.out.println("Syntax ok.");
+//			else
+//				System.out.println("Syntax NOT ok!");
+//		}
+//		
 		
 //		Stack<String> pancakes = new ArrayStack<String>();	
 //		pancakes.push("blueberry");
@@ -52,6 +52,18 @@ public class Days12and13
 //			String p = pancakes.pop();
 //			System.out.println(p);
 //		}
+		
+		Queue<String> people = new LinkedQueue<String>();
+		people.enqueue("Alice");
+		people.enqueue("Beatrix");
+		people.enqueue("Clarice");
+		System.out.println(people.dequeue());
+		people.enqueue("Dimitri");
+		System.out.println(people.dequeue());
+		people.enqueue("Enrique");
+		while (!people.isEmpty())
+			System.out.println(people.dequeue());
+		s
 	}
 
 }
