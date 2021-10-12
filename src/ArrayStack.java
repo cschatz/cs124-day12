@@ -6,7 +6,7 @@ public class ArrayStack<E> implements Stack<E> {
 	private int numItems;
 	
 	// constructor
-	ArrayStack() {
+	public ArrayStack() {
 		items = (E[]) new Object[CAPACITY];
 		numItems = 0;
 	}
