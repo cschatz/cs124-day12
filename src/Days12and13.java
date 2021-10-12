@@ -3,7 +3,28 @@ import java.util.Scanner;
 public class Days12and13
 {
 	public static boolean checkParens(String text) {
-		
+		Stack<Character> stack = new ArrayStack<Character>();
+		for (char c : text.toCharArray()) {
+			if (c == '(' || c == '[' || c == '{') {
+				stack.push(c);
+			} else if (c == ')') {
+				if (!stack.isEmpty() && stack.top() == '(')
+					stack.pop();
+				else 
+					return false;
+			} else if (c == ']') {
+				if (!stack.isEmpty() && stack.top() == '[')
+					stack.pop();
+				else 
+					return false;
+			} else if (c == '}') {
+				if (!stack.isEmpty() && stack.top() == '{')
+					stack.pop();
+				else 
+					return false;
+			}
+		}
+		return (stack.isEmpty());
 	}
 	
 	public static void main(String[] args) {
