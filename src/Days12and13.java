@@ -1,4 +1,5 @@
-public class Day12 {
+public class Days12and13
+{
 	
 	public static void main(String[] args) {
 		Stack<String> pancakes = new LinkedStack<String>();	
